@@ -1,0 +1,81 @@
+* Reinforcement learning avec Minecraft/Malmo
+** Introduction / theorie
+The purpose of Reinforcement Learning (RL) is to solve a Markov
+Decision Process (MDP) when you don’t know the MDP, in other words you
+don’t know the states you can visit and you don’t know the transition
+function from each state.
+
+éléments:
+A set of environment and agent states S.
+A set of actions A of the agent.
+Policies of transitioning from states to actions.
+Rules that determine the scalar immediate reward of a transition.
+Rules that describe what the agent observes.
+
+*** Dynamic Programming
+La programmation dynamique a pour but de réduire un problème a
+plusieurs sous-problèmes, cette méthode n'est pas applicable a tous
+les domaines.
+
+=> require optimal sub-structure
+
+| Breakable        | not breakable |
+|------------------|---------------|
+| Shortest pass    | TSP           |
+| Knapsack problem | Longest pass  |
+|                  | Vertex cover  |
+|                  |               |
+
+*** Markov Decision Process (MDP)
+https://en.wikipedia.org/wiki/Markov_decision_process
+Un MDP est décrit par quatre caractéristiques:
+- S : un ensemble finit d'états
+- A : un ensemble finit d'actions
+-   : la probabilité qu'une action a d'un état s à l'instant t résulte
+    sur l'état s' à l'instant t+1
+-   : immediate reward (or expected immediate reward) après transition
+    sur un nouvel état.
+
+#+BEGIN_SRC latex
+
+#+END_SRC
+
+*** Q-Learning
+For any finite Markov decision process (FMDP), Q-learning finds a
+policy that is optimal in the sense that it maximizes the expected
+value of the total reward over any and all successive steps, starting
+from the current state.[1] Q-learning can identify an optimal
+action-selection policy for any given FMDP, given infinite exploration
+time and a partly-random policy.[1] "Q" names the function that
+returns the reward used to provide the reinforcement and can be said
+to stand for the "quality" of an action taken in a given state.[2]
+
+*** Alternatives
+- Deep Q Networks (DQNs)
+  Ne traite que des valeurs discrèters dans des espaces de dimensions faible.
+- Deep DeterministicPoling (DDPG)
+  Peut traiter de espaces de dimensions forte.
+- Policy Gradient
+
+** Malmo
+MalmoEnv implements an Open AI "gym"-like environment directly in
+Python.
+
+The Malmo platform provides an API which enables access to actions,
+observations (i.e. location, surroundings, video frames, game
+statistics) and other general data that Minecraft provides.
+
+# Installation
+
+
+
+** Marlow
+high level API built on top of Project MalmÖ to
+
+
+
+Wrapper for Malmo that provides a higher level
+API and more standardized RL-friendly environment for scientific
+study.
+
+# Installation

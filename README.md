@@ -12,11 +12,12 @@ les domaines.
 
 => require optimal sub-structure
 
-| Breakable     | not breakable |
-|---------------|---------------|
-| Shortest pass | TSP           |
-|               | Longest pass  |
-|               |               |
+| Breakable        | not breakable |
+|------------------|---------------|
+| Shortest pass    | TSP           |
+| Knapsack problem | Longest pass  |
+|                  | Vertex cover  |
+|                  |               |
 
 ### Markov Decision Process (MDP)
 https://en.wikipedia.org/wiki/Markov_decision_process
